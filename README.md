@@ -97,7 +97,7 @@ The core analyzer does not require an AI provider.
 
 ## 💬 Discord integration
 
-DevGuard AI can send detected incidents to a Discord channel using a Discord webhook. Discord webhooks are designed for automated messages and updates to a text channel. citeturn0search5
+DevGuard AI can send detected incidents to a Discord channel using a Discord webhook. Discord webhooks are designed for automated messages and updates to a text channel.
 
 Configure the webhook without committing it to the repository:
 
@@ -120,7 +120,7 @@ Test the connection:
 python -m devguard discord-test
 ```
 
-You can also pass the webhook directly with `--discord-webhook`. Supported severity thresholds are `INFO`, `WARNING`, and `CRITICAL`. Slash commands are a separate Discord app/bot feature; this release intentionally uses webhooks so the core project stays lightweight and does not require a persistent bot process. citeturn0search8turn0search6
+You can also pass the webhook directly with `--discord-webhook`. Supported severity thresholds are `INFO`, `WARNING`, and `CRITICAL`. Slash commands are a separate Discord app/bot feature; this release intentionally uses webhooks so the core project stays lightweight and does not require a persistent bot process.
 
 ## 🧠 How it works
 

@@ -63,7 +63,8 @@ def send_findings(findings: Sequence[Finding], *, source: str = "DevGuard AI",
         }],
         "allowed_mentions": {"parse": ["users", "roles"] if config.mention else []},
     }
-    return _post(config.webhook_url, payload, timeout)
+    _post(config.webhook_url, payload, timeout)
+    return len(selected)
 
 def send_test(config: DiscordConfig, *, timeout: float = 10.0) -> None:
     _validate_config(config)
